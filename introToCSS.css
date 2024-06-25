@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+
+/* Paragraph id */
+/* #p1{
+    color: greenyellow;
+}
+#p2{
+    color: rgb(5, 120, 205);
+}
+#p3{
+    color: cyan;
+}
+#p4{
+    color: orange;
+} */
+
+/* Paragraph class */
+.odd{ 
+    color: greenyellow;
+}
+.even{
+    color: cyan
+}
