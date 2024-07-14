@@ -1,0 +1,12 @@
+body{
+    background-color: black; /* Color by name */
+}
+#p1{
+    color: rgb(121, 208, 227); /* RGB (Red, Green, Blue) */
+}
+#p2{
+    color: hsl(0, 0%, 0%); /* HSL (Hue, Saturation, Lightness) */
+}
+.c1{
+    color: #8cd656; /* Hexadecimal Values */
+}

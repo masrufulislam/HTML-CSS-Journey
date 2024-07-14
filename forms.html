@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head> <title>Forms</title> </head>
+    <body>
+        <!-- 
+            Using index.php is a convention that provides consistency across projects
+            But it can anything action="index.php": The URL where the form data will be sent upon submission. 
+            It can be any valid URL, like submit-form.php, https://example.com/submit, etc. 
+            If no action is specified, the form will submit to the current page URL.
+
+            The GET method appends form data to the URL, making it suitable for non-sensitive data and retrieval actions, 
+            while the POST method sends data in the request body, ideal for sensitive information and modifying server-side data.
+        -->
+        <form action = "index.php" method = "POST" enctype = "multipart/form-data">
+
+            <!-- 
+                required = need to type in something
+                minlength = Need to type in atleast this much amount of characters
+                maxlength = can't type more than this amount of characters
+                reset = reset the textbox
+                placeholder = let the user in what format the user should type in the information
+            -->
+
+            <label for = "username">username:</label>
+            <input type = "text" id = "username" placeholder = "alupotol" minlength = "6" maxlength = "20" required>
+            <input type = "reset"><br>
+
+            <label for = "password">password:</label>
+            <input type = "password" id = "password" minlength = "8" maxlength = "32" required>
+            <input type = "reset"><br>
+
+            <label for = "email">email:</label>
+            <input type = "email" id = "email" placeholder = "murgi15@gmail.com" required>
+            <input type = "reset"><br>
+
+            <label for = "phone">phone #:</label>
+            <input type = "tel" id = "phone" placeholder = "(XXX)-XXX-XXXX" pattern = [0-9]{3}-[0-9]{3}-[0-9]{3} required>
+            <input type = "reset"><br>
+
+            <label for = "birthdate">birthdate:</label>
+            <input type = "date" id = "birthdate" required>
+            <input type = "reset"><br>
+
+            <label for = "quantity">quantity:</label>
+            <input type = "number" id = "quantity" min = "0" max = "9999" value = "101" required>
+            <input type = "reset"><br>
+
+            <label for = "title">title:</label>
+            <input type = "radio" id = "quantity" name = "title">
+            <label for = "Mr.">Mr.</label>
+            <input type = "radio" id = "Ms." name = "title">
+            <label for = "Ms.">Ms.</label>
+            <input type = "radio" id = "PhD." name = "title">
+            <label for = "PhD.">PhD.</label>
+            <input type = "reset"><br>
+   
+            <label for = "payment">payment:</label>
+            <select id = "payment">
+                <option value = "VISA">VISA</option>
+                <option value = "MasterCard">MasterCard</option>
+                <option value = "GiftCard">GiftCard</option>
+            </select>
+            <input type = "reset"><br>
+
+            <label for = "subscribe">subscribe:</label>
+            <input type = "checkbox" id = "subscribe">
+            <input type = "reset"><br>
+
+            <label for = "comments">comments:</label>
+            <textarea id = "comments" rows = "4" cols = "30"></textarea>
+            <input type = "reset"><br>
+            
+            <label for = "file">File:</label>
+            <input type = "file" id = "file" accept = "image/png, image/jpeg">
+            <input type = "reset"><br>
+
+            <br> <input type = "submit">
+        </form>
+    </body>
+</html>
